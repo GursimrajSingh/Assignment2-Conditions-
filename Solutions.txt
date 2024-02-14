@@ -1,0 +1,101 @@
+Q1. Find the output for this code. Let input:- 2 3 6
+#include <iostream>
+using namespace std;
+int main(){
+int x;
+cout << "Enter first number\n";
+cin >> x; // user will give ‘x’ a value.
+int y, m;
+cout << "Enter second number and value for taking modulus\n";
+cin >> y >> m; // user will give ‘y’ a value.
+int Z = (x * y) % m;
+cout << "Output is: " << Z;
+}
+
+Ans: As x=2, y=3, m=6
+     (2*3)%6 = 6%6 which is equal to 0
+
+
+Q2. Find the output for this code. Let input:- 3 2
+#include <iostream>
+using namespace std;
+int main(){
+int x;
+cout<<"Enter first number\n";
+cin>>x; // user will give 'x' a value.
+int y;
+cout<<"Enter second number\n";
+cin>>y; // user will give 'y' a value.
+cout<<(x!=y)<<" "<<(x>=y);
+}
+
+Ans: As x=3, y=2
+When cout<<(x!=y)<<" "<<(x>=y);
+Both conditions are true, So value of bool true is 1
+output:1 1
+
+
+Q3 Find the output for this code. Let input:- 2 3
+#include <iostream>
+using namespace std;
+int main(){
+int x,y;
+cin>>x>>y;
+x+=y;
+x-=y;
+x%=y;
+cout<<x;
+}
+
+Ans:As x=2, y=3
+    For x+=y  //x becomes 5
+    For x-=y  //x becomes 2
+    For x%=y  //x=x%y  // 2%3 // Which is 2
+    Hence value of x is Printed i.e 2
+
+
+Q4. WAP for finding the volume of the cylinder by taking radius and height as input.
+
+Ans:#include <iostream>
+using namespace std;
+int main(){
+float r,h;
+cout<<"Enter radius of cylinder: ";
+cin>>r;
+cout<<"Enter height of cylinder: ";
+cin>>h;
+float volume;
+volume= 3.14*r*r*h;
+cout<<volume;
+}
+
+Q5. WAP to find the difference between ASCII of two characters ,take them as input .
+
+Ans:
+#include <iostream>
+using namespace std;
+int main(){
+    char a,b;
+    cout<<"Enter character a: ";
+    cin>>a;
+    cout<<"Enter character b: ";
+    cin>>b;
+    cout<<(int)a-(int)b;
+}
+
+
+Q6. Find the output of the below code
+#include <iostream>
+using namespace std;
+int main(){
+int i = ( 4 + 7 / 5 * 6 * 6+9 )% 100 ;
+cout<<i;
+}
+
+Ans:
+As hierarchy of * / is higer than + - and is from left to right
+then we can write value of i as= {4+(7/5*6*6)+9}%100
+                               = (4+36+9)%100
+                               = 49%100
+                               =49
+Hence 49 is thr reqiured answer.
